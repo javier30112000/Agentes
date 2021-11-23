@@ -14,22 +14,19 @@ class Person(ap.Agent):
     def setup(self):
         """ Initialize a new variable at agent creation. """
         self.condition = 0  # Buscando lugar = 0, Encontró lugar = 1, esta en lugar = 2 De salida = 3
-        self.LugaresDisponibles = self.p.lugares_disponibles
 
     def being_sick(self):
         """ Spread disease to peers in the network. """
         rng = self.model.random
         for n in self.network.neighbors(self):
-            if n.condition == 0 and self.LugaresDisponibles != 0 and self.p.chance_de_encontrar_lugar > rng.random():
+            if n.condition == 0 and self.p.chance_de_encontrar_lugar > rng.random():
                 n.condition = 1  # Encontró lugar
 
             if self.p.A_Ver_Si_No_Se_Pierde > rng.random():
                 self.condition = 2  # Recover from infection
-                self.LugaresDisponibles = self.LugaresDisponibles - 1
                 
             if self.p.ya_se_va > rng.random():
                 self.condition = 3 # ya se va de salida
-                self.LugaresDisponibles = self.LugaresDisponibles + 1
             
 class VirusModel(ap.Model):
 
@@ -78,14 +75,13 @@ class VirusModel(ap.Model):
         self.report('Peak share infected', max(self.log['I']))
         
 parameters = {
-    'population': 100,
+    'population': 50,
     'chance_de_encontrar_lugar': 0.5,
-    'A_Ver_Si_No_Se_Pierde': 0.8,
+    'A_Ver_Si_No_Se_Pierde': 0.9,
     'ya_se_va': 0.6,
     'initial_infection_share': 0.1,
     'number_of_neighbors': 2,
-    'network_randomness': 0.5,
-    'lugares_disponibles': 80
+    'network_randomness': 0.5
 }
 
 model = VirusModel(parameters)
@@ -131,8 +127,9 @@ animation = ap.animate(VirusModel(parameters), fig, axs, animation_plot)
 
 IPython.display.HTML(animation.to_jshtml())
 
+plt.grid()
+
 plt.show()
 
 animation.save('virus_model.gif', writer='imagemagick')
 
-IPython.display.HTML(animation.to_jshtml())
