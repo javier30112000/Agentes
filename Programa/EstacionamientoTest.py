@@ -79,7 +79,7 @@ parameters = {
     'chance_de_encontrar_lugar': 0.5,
     'A_Ver_Si_No_Se_Pierde': 0.9,
     'ya_se_va': 0.6,
-    'initial_infection_share': 0.1,
+    'initial_infection_share': 0.8,
     'number_of_neighbors': 2,
     'network_randomness': 0.5
 }
