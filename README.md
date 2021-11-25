@@ -1,5 +1,10 @@
 # Agentes
-Estacionamiento 
+Automoviles
+Personas
+Estacionamientos
 
 
-![version1](https://user-images.githubusercontent.com/58484877/143356127-8daaabce-e2c2-4a28-945c-8577499d4b87.PNG)
+# Version 1 de la simulacion
+
+Primer instancia del estacionamiento y agentes con movimiento aleatorio sin interaccion entre ellos
+![Captura](https://user-images.githubusercontent.com/58484877/143357052-c2c3389c-81c2-4473-a347-39f205ba99b0.PNG)
