@@ -23,3 +23,10 @@ Mejora del estacionamiento, interaccion entre carros y estacionamientos libres y
 Diferentes colores, interaccion entre carros y personas y cruceros para personas y vehiculos
 
 ![giphy (1)](https://user-images.githubusercontent.com/58484877/143534411-8d642e2c-016d-461f-a6d0-ddd83cbad61f.gif)
+
+
+# Primera visualizacion
+
+Escenario con el que se trabajara (aun falta implementar la comunicacion completa y ajustar los valores)
+
+![Captura](https://user-images.githubusercontent.com/58484877/143718933-1fc1ee40-1bcf-45ea-9b9f-99a3be9ede6a.PNG)
