@@ -25,12 +25,13 @@ public class MovimientoPeatonal : MonoBehaviour
     }
 
     void GetNextWaypoint(){
+        /*
         if (wavepointIndex >= Waypoints.points.Length - 1){
             Destroy(gameObject);
             return;
         }
-
-        wavepointIndex++;
+*/
+        wavepointIndex = Random.Range(0, Waypoints.points.Length);
         target = Waypoints.points[wavepointIndex];
     }
 

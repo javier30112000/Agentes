@@ -37,7 +37,12 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Waypoints.cs" />
+     <Compile Include="Assets\LectorDeCordenadas.cs" />
      <Compile Include="Assets\MovimientoPeatonal.cs" />
+     <None Include="Assets\TXT\Cordenadas03.txt" />
+     <None Include="Assets\TXT\Cordenadas.txt" />
+     <None Include="Assets\TXT\Cordenadas01.txt" />
+     <None Include="Assets\TXT\Cordenadas02.txt" />
     <Reference Include="UnityEngine">
         <HintPath>D:/UnityProgram/Hub/Editor/2020.3.18f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
