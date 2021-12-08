@@ -27,14 +27,20 @@ Diferent colors, interactions between cars, people and crosswalks
 # Final Version
 
 
- Blue   = Vehicle searching for a place
- Purple = Vehicle searching for an exit
- Pink   = People
- Yellow = Free parking spot
- Red    = Occupate parking spot
+Blue   = Vehicle searching for a place
+
+Purple = Vehicle searching for an exit
+
+Pink   = People
+
+Yellow = Free parking spot
+
+Red    = Occupate parking spot
  
- Gray       = Sidewalk
- light gray = Crosswalk
- green      = Street
+Gray       = Sidewalk
+
+light gray = Crosswalk
+
+green      = Street
   
 ![200](https://user-images.githubusercontent.com/58484877/145129028-8aeebdc9-e382-4420-a2b8-b8c5682a1732.gif)
